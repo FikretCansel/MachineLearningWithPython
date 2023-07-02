@@ -1,0 +1,41 @@
+
+Aktivasyon fonksiyonlarından geçirir.
+Relu fonksiyonları => 0 küçük degerleri 0 a , 0 dan büyük degerleri kendisine götürür
+
+Loss fonksiyonu => modelin dogrulugunu degerlendirir. hatanın düşük olmasını bekleriz
+
+agırlıkları güncellemek => adam
+
+
+conta activate tensorflow
+pip install tensorflow
+
+regullarleştirme teknıgıdir ve ezberlemesini engeller
+
+optimize edici => adam
+los => performans ölçer
+metrics => performans görme => accuracy
+epochs => iterasyon argümanı
+
+module.evelote => dogrulugu
+
+#Dense layerdaki her nöronu bir önceki layera baglayan derin sinir aglarıdır
+
+model.add(Dense(13, input_dim=13,kernel_initializer="normal",activation="relu"))  #Modele tabaka ekleme
+
+activasyon nörona gelen girdi sinyalini çıktı sinyaline çevirir
+
+#Optimizasyon fonksiyonu
+# Kayıp fonksiyonu
+# Performansı belirlemek için Metricdir
+
+#Optimizasyon algoritması
+#gradyan azaltma => her egitim örneginden sonra kalite hesaplanır türev kullanılarak gradyan azaltma kullanılır
+#gradyan azaltma => daha az kayıp ile en iyi model oluşturulmaya çalışılır
+# adam => her parametre için uyumlu ögrenme modeli hesaplanır
+
+# egitim yapmak için kullanılan bir tekniktir
+#epochs =>
+# her bir devirden sonra modeli degerlendirmek için validation verilerini kullanalım
+
+#batch_size => tek seferde tüm verilerin egitilmesi yerine veri setinin alt kümelerine
